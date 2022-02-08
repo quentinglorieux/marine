@@ -1,13 +1,15 @@
 <template>
 <div>
-    <div  class="flex m-10 text-gray-400 ">
+    <div  class="flex flex-col m-10 ml-40 text-gray-400 hover:scale-105 ease-in duration-200">
 
-            <div class=" text-gray-300 shadow-xs text-2xl mb-10"> 
-            {{ publication.acf.publication_title }}
-            </div>
-            <div>
-            {{ publication.acf.publication_journal }} -   {{ publication.acf.publication_dop }}
-            </div>
+        <div class="text-base text-gray-100 "> {{ publication.acf.publication_title }} </div>
+        <span> {{ publication.acf.publication_authors }} &nbsp;</span>
+        <div class="flex">
+            <span class="underline decoration-solid"> {{ publication.acf.publication_journal }}  </span>
+            &nbsp; <strong>{{ publication.acf.publication_volume }}</strong> 
+            <span v-show="publication.acf.publication_pages" >, {{ publication.acf.publication_pages }} </span>
+            &nbsp; ({{ publication.acf.publication_dop }})
+        </div>
     </div>
 </div>
 </template>
@@ -16,7 +18,7 @@
 export default {
   props: {
       publication:'',
-  }
+  },
 }
 </script>
 
