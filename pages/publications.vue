@@ -1,28 +1,15 @@
 <template>
 <div> 
     <!-- <PublicationFilter /> -->
-	<div class="flex justify-center gap-5">
-		<!-- <label><input type="radio" v-model="selectedCategory" value="All" /> All </label>
-		<label><input type="radio" v-model="selectedCategory" value="875" /> Oscillations Connectivity and Plasticity</label>
-		<label><input type="radio" v-model="selectedCategory" value="876" /> Eye movement</label>
-        <label><input type="radio" v-model="selectedCategory" value="397" /> Consciousness</label> -->
-         <button v-on:click="selectAll()" class="bg-transparent hover:bg-gray-500 text-blue-200 py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+    <div  class="flex justify-center gap-5 mt-5">
+        <button v-on:click="selectTag('all')" class="bg-transparent focus:bg-teal-600 hover:bg-gray-500 text-blue-200 py-2 px-4 border border-blue-500 hover:border-transparent rounded">
           All
         </button>
-        
-         <button v-on:click="selectC1()" class="bg-transparent hover:bg-gray-500 text-blue-200 py-2 px-4 border border-gray-500 hover:border-transparent rounded">
-         Consciousness
+    <div v-for="tagItem in tagList" v-bind:key="tagItem.id">
+        <button v-on:click="selectTag(tagItem.id)" class="focus:bg-teal-600 bg-transparent hover:bg-gray-500 text-blue-200 py-2 px-4 border border-gray-500 hover:border-transparent rounded">
+          {{tagItem.label}}
         </button>
-         <button v-on:click="selectC2()" class="bg-transparent hover:bg-gray-500 text-blue-200 py-2 px-4 border border-gray-500 hover:border-transparent rounded">
-          Eye movement
-        </button>
-          <button v-on:click="selectC3()" class="bg-transparent hover:bg-gray-500 text-blue-200 py-2 px-4 border border-gray-500 hover:border-transparent rounded">
-          Oscillations Connectivity and Plasticity
-        </button>
-          <button v-on:click="selectC4()" class="bg-transparent hover:bg-gray-500 text-blue-200 py-2 px-4 border border-gray-500 hover:border-transparent rounded">
-          Neuroaesthetics
-        </button>
-        
+    </div>
     </div>
     
 <div v-for="item in filteredPubli" v-bind:key="item">
@@ -41,42 +28,36 @@
           data(){
               return{
                   PubliJson: json,
-                  selectedCategory: 'All'
+                  selectedCategory: 'all',
+                  tagList: [
+                      { id: 397, label: 'Consciousness'},
+                      { id: 876, label: 'Eye movement'},
+                      { id: 875, label: 'Oscillations Connectivity and Plasticity'},
+                      { id: 448, label: 'Neuroaesthetics'},
+                      //{ id: 'all', label: 'All'}
+                  ]
               }
           },
-        //  the classic technique to order by date //
-//         computed : {
-//         orderedYears() {
-//           return this.PubliJson.sort((a, b) => { return b.acf.publication_dop - a.acf.publication_dop;});
-//       }
-//   }
-	methods:{
-        selectC1() {
-          this.selectedCategory = '397'
-        },
-        selectC2() {
-          this.selectedCategory = '876'
-        },
-        selectC3() {
-          this.selectedCategory = '875'
-        },
-        selectC4() {
-          this.selectedCategory = '448'
-        },
-        selectAll() {
-          this.selectedCategory = 'All'
-        },
+	
+    methods:{  
+        // selectAll() {
+        //   this.selectedCategory = 'all'
+        // },
+        selectTag(tagItem) {
+            this.selectedCategory = tagItem
+        }
     },
+    
     computed: {
 		filteredPubli: function() {
 			var vm = this;
 			var tags = vm.selectedCategory;
 			
-			if(tags === "All") {
+			if(tags === "all") {
 				return vm.PubliJson.sort((a, b) => { return b.acf.publication_dop - a.acf.publication_dop;});
 			} else {
 				return vm.PubliJson.filter(function(publi) {
-					 return publi.publication_tags[0] == tags;
+					 return publi.publication_tags[0] == tags; // == because not the same type
 				});
 			}
 		}
