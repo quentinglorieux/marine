@@ -1,6 +1,8 @@
 <template>
 <div> 
-<div v-for="item in items" v-bind:key="item"><Card1/>  </div>
+  <Intro />
+  <Adress />
+<!-- <div v-for="item in items" v-bind:key="item"><Card1/>  </div> -->
 </div>
   
 </template>
@@ -12,9 +14,6 @@ export default {
   return {
     items: [
       { message: 'Foo' }, 
-      { message: 'Bar' },
-      { message: 'Foo' }, 
-      { message: 'Bar' },
       ]
   }
 }

@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex justify-center  text-gray-400 shadow-xs  text-xl m-10 gap-x-4 nuxt-link" >
+    <nav class="flex justify-center shadow-xs text-xl my-24 gap-x-4 nuxt-link" >
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/research">Research</NuxtLink>
       <NuxtLink to="/team">Team</NuxtLink>
@@ -10,6 +10,11 @@
 
 <style>
 nav a:hover{
-  color: rgb(156, 156, 156);
+  color: var(--secondary);
+  text-decoration:  overline;
+}
+nav a{
+  color: var(--light);
+  text-decoration:  underline;
 }
 </style>

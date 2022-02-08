@@ -1,7 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --primary: #35495e;
   --secondary: #3b8070;
-  --background: #475569
+  --light: rgb(156, 156, 156);
+  --background: #3c3e3f
 ;
 }
 
@@ -9,18 +14,6 @@ body{
   background-color: var(--background);
 }
 
-/* nav {
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
-} */
-a {
-  text-decoration: none;
-  color: var(--primary);
-}
 .nuxt-link-exact-active {
   color: var(--secondary);
 } 
-.nuxt-link-hover{
-    color: var(--secondary);
-}
