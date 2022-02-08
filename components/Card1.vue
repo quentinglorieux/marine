@@ -13,7 +13,6 @@
         <span class="badge">#winter</span>
       </div>
     </div>
-  <div class="bg-midnight text-tahiti">Hello</div>
   </div>
 
 </template>
@@ -29,6 +28,6 @@
 
 <script>
 export default {
-  name: 'NuxtTutorial'
+  name: 'Card1',
 }
 </script>
