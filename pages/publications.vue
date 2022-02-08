@@ -6,7 +6,11 @@
 		<label><input type="radio" v-model="selectedCategory" value="875" /> Oscillations Connectivity and Plasticity</label>
 		<label><input type="radio" v-model="selectedCategory" value="876" /> Eye movement</label>
         <label><input type="radio" v-model="selectedCategory" value="397" /> Consciousness</label> -->
-        <button v-on:click="selectC1()" class="bg-transparent hover:bg-gray-500 text-blue-200 py-2 px-4 border border-gray-500 hover:border-transparent rounded">
+         <button v-on:click="selectAll()" class="bg-transparent hover:bg-gray-500 text-blue-200 py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+          All
+        </button>
+        
+         <button v-on:click="selectC1()" class="bg-transparent hover:bg-gray-500 text-blue-200 py-2 px-4 border border-gray-500 hover:border-transparent rounded">
          Consciousness
         </button>
          <button v-on:click="selectC2()" class="bg-transparent hover:bg-gray-500 text-blue-200 py-2 px-4 border border-gray-500 hover:border-transparent rounded">
@@ -58,6 +62,9 @@
         },
         selectC4() {
           this.selectedCategory = '448'
+        },
+        selectAll() {
+          this.selectedCategory = 'All'
         },
     },
     computed: {
