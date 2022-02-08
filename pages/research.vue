@@ -1,8 +1,19 @@
 <template>
 <div> 
-<div v-for="item in items" v-bind:key="item"><ResearchItem v-bind:title="item.title" v-bind:content="item.content" v-bind:image_name="item.image_name" />  </div>
+  <div v-for="item in items" v-bind:key="item">
+    <ResearchItem
+    v-bind:science_object="item" >
+    </ResearchItem>  </div>
+
+  <!-- <div v-for="item in items" v-bind:key="item">
+      <ResearchItem
+      v-bind:title="item.title" 
+      v-bind:content="item.content" 
+      v-bind:image_name="item.image_name" >
+      </ResearchItem>  
+  </div> -->
+
 </div>
-  
 </template>
 
 <script>
