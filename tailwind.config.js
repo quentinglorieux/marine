@@ -1,5 +1,5 @@
 module.exports = {
-  //mode: 'jit',
+  mode: 'jit',
   purge: [],
   darkMode: true, // or 'media' or 'class'
   theme: {
@@ -8,8 +8,10 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    function({ addBase, theme }) {
+  plugins: [ 
+    // Plugin 1 allows for using tailwind colors
+    // with var(--color-gray-500); in a CSS rule
+    function plugin1({ addBase, theme }) { 
       function extractColorVars(colorObj, colorGroup = '') {
         return Object.keys(colorObj).reduce((vars, colorKey) => {
           const value = colorObj[colorKey];

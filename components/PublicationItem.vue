@@ -7,8 +7,8 @@
         <div class="flex">
             <a :href="publication.acf.publication_doi" class="underline decoration-solid hover:text-gray-200 "> {{ publication.acf.publication_journal }}  </a>
             &nbsp; <strong>{{ publication.acf.publication_volume }}</strong> 
-            <span v-show="publication.acf.publication_pages" >, {{ publication.acf.publication_pages }} </span>
-            &nbsp; ({{ publication.acf.publication_dop }})
+            <span v-show="publication.acf.publication_pages.length >1" >, {{ publication.acf.publication_pages }} &nbsp; </span>
+            <span> ({{ publication.acf.publication_dop }}) </span>
         </div>
         
     </div>
@@ -25,14 +25,14 @@ export default {
 </script>
 
 <style scoped>
-
 .separateur{
-      height: 1px;
-      border-width: 1px;
-      border-color: var(--color-gray-500);
-      width: 60%;
+    height: 1px;
+    border-width: 1px;
+    border-color: var(--color-gray-500);
+    width: 60%;
 }
 
+/* Animation */
 .fade-in-text {
   display: inline-block;
   animation: fadeIn linear 0.4s;
