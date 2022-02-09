@@ -1,14 +1,14 @@
 <template>
-<div> 
+<div > 
     <!-- <PublicationFilter /> -->
-    <div  class="flex justify-center gap-5 mt-5">
-        <button v-on:click="selectTag('all')" class="bg-transparent focus:bg-teal-600 hover:bg-gray-500 text-blue-200 py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+    <div  class="flex justify-center gap-5 mt-5 mb-10 text-gray-200 text-xl">
+        <button class="button-filter" v-on:click="selectTag('all')" >
           All
-        </button>
+        </button> 
     <div v-for="tagItem in tagList" v-bind:key="tagItem.id">
-        <button v-on:click="selectTag(tagItem.id)" class="focus:bg-teal-600 bg-transparent hover:bg-gray-500 text-blue-200 py-2 px-4 border border-gray-500 hover:border-transparent rounded">
+       /  <button v-on:click="selectTag(tagItem.id)" class="button-filter">
           {{tagItem.label}}
-        </button>
+        </button> 
     </div>
     </div>
     
@@ -40,9 +40,6 @@
           },
 	
     methods:{  
-        // selectAll() {
-        //   this.selectedCategory = 'all'
-        // },
         selectTag(tagItem) {
             this.selectedCategory = tagItem
         }
@@ -65,11 +62,14 @@
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .container {
 	padding: 20px;
 	width: 100%;
 	margin: 0 auto;
-
+}
+.button-filter {
+  @apply bg-transparent focus:text-emerald-400  text-gray-200 hover:text-gray-400 py-2 px-4 text-base;   /* since v3 */
 }
 </style>
+

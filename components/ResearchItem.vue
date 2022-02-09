@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div  class="flex m-10 text-gray-400 ">
+    <div  class="flex m-10 text-gray-400">
         <div>
             <div class=" text-gray-300 shadow-xs text-2xl mb-10"> 
             {{ science_object.title }}
