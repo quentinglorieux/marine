@@ -11,13 +11,19 @@
             <p v-else-if="$fetchState.error">An error occurred :(</p>
             
             </div>
-            <nuxt-img class="saturate-0 object-contain" src="/Picture_MV_Brain.jpg" 
+            <nuxt-img class="saturate00  object-contain" src="/Picture_MV_Brain.jpg" 
             width="300"
             />
     </div>
 </div>
 </template>
 
+<style scoped>
+.saturate00{
+ -webkit-filter  : saturate(0%); 
+ filter    : saturate(0%); 
+}
+</style>
 
 <script>
   export default {
