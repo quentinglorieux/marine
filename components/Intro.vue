@@ -6,7 +6,7 @@
             Welcome to the {{  planet }}
             </div>
             <!-- <div v-html="options.acf.siteinfo_description"> -->
-            </div>
+            <!-- </div> -->
             <!-- <p class="mt-3">To explore these questions, we use a combination of methods including psychophysics, eye movements tracking,
             transcranial magnetic stimulation, functional magnetic resonance imaging, 
             electro- and magnetoencephalography.
