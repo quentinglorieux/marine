@@ -11,25 +11,26 @@
             <p v-else-if="$fetchState.error">An error occurred :(</p>
             
             </div>
-            <nuxt-img class="saturate00  object-contain" src="/Picture_MV_Brain.jpg" 
+            <nuxt-img class="object-contain saturate00" src="/Picture_MV_Brain.jpg" 
             width="300"
             />
     </div>
 </div>
 </template>
 
-<style scoped>
+<style> 
 .saturate00{
  -webkit-filter  : saturate(0%); 
  filter    : saturate(0%); 
 }
+/* also usable in ResearchItem.vue */
 </style>
 
 <script>
   export default {
     data() {
       return {
-        options: {},
+        options: '',
        // planet: {}
       }
     },

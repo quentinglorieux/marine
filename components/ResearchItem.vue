@@ -9,7 +9,7 @@
             {{ science_object.content }}
             <!-- {{ content }} : if the prop is more specific -->
             </div>
-            <nuxt-img class=" object-contain w-200 ml-10 saturate-0" :src="science_object.image_name" 
+            <nuxt-img class=" object-contain w-200 ml-10 saturate00" :src="science_object.image_name" 
             width="200"
             />
     </div>
