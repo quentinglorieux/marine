@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex justify-center shadow-xs text-ml my-24  nuxt-link text-gray-500">
+    <nav class="flex justify-center shadow-xs text-ml my-24 inline-block nuxt-link text-gray-500">
         <div>
             <NuxtLink class="button-nav" to="/">Home</NuxtLink> 
         </div>
