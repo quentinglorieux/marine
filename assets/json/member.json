@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "date": "2021-07-16T20:59:25",
+    "modified": "2021-07-16T20:59:25",
+    "order": "1",
+    "owner": "quentin",
+    "highlight": true,
+
+    "firstname": "Prénom1",
+    "lastname": "Nom1",
+    "status": "PI",
+    "email": "nom.prenom@mail.com",
+    "affiliation": "université de Paris",
+    "permanent": true,
+    "alumni": false,
+    "description": "J'ai très bien travaillé pour en arriver là.",
+    "image": "https://media.istockphoto.com/photos/cute-panda-bear-climbing-in-tree-picture-id523761634?k=20&m=523761634&s=612x612&w=0&h=fycQb31QlRoNLdJWWddooJ94a-54YLYQ3ggTLPkhvmk=",
+    "cv": "http://www.slate.fr/sites/default/files/styles/1680x980/public/rtx1tglo.jpg",
+    "orcid": "0000-0003-0903-0233",
+    "scholar": "c4Y1-REAAAAJ",
+    "twitter": "@quentinglorieux",
+    "website": "https://www.google.fr",
+    "topics": ["Plasticity of the Sense of Agency"],
+    "teams": ["Team 1"],
+    "publications": ["1", "2"]
+  }
+]
