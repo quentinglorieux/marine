@@ -1,110 +1,80 @@
 [
-    {
-        "id": 1,
-        "date": "2021-07-16T20:59:25",
-        "date_gmt": "2021-07-16T20:59:25",
-        "modified": "2021-07-16T20:59:25",
-        "modified_gmt": "2021-07-16T20:59:25",
-        "order": "1",
-        "status": "publish",
-        "owner": "quentin",
-        "highlight": true,
+  {
+    "id": 1,
+    "date": "2021-07-16T20:59:25",
+    "modified": "2021-07-16T20:59:25",
+    "order": "1",
+    "status": "publish",
+    "owner": "quentin",
+    "highlight": true,
 
-        "type": "article",
-        "title": "Detecting fluorescent protein expression and co-localisation on single secretory vesicles with linear spectral unmixing",
-        "dop": "2006",
-        "journal": "PRL",
-        "volume": "35",
-        "pages": "967-977",
-        "doi": "10.1007/s00249-005-0040-8",
-        "abstract": "Many questions in cell biology and biophysics involve the quantitation of co-localisation and the interaction of proteins tagged with different fluorophores. however, the incomplete separation of the different colour channels due to the presence of autofluorescence, along with cross-excitation and emission",
-        "link": "http://arxiv.org",
-        "file": "https://arxiv.org/pdf/2202.05369.pdf",
+    "type": "article",
+    "title": "Detecting fluorescent protein expression and co-localisation on single secretory vesicles with linear spectral unmixing",
+    "dop": "2006",
+    "journal": "PRL",
+    "volume": "35",
+    "pages": "967-977",
+    "doi": "10.1007/s00249-005-0040-8",
+    "abstract": "Many questions in cell biology and biophysics involve the quantitation of co-localisation and the interaction of proteins tagged with different fluorophores. however, the incomplete separation of the different colour channels due to the presence of autofluorescence, along with cross-excitation and emission",
+    "link": "http://arxiv.org",
+    "file": "https://arxiv.org/pdf/2202.05369.pdf",
 
-        "authors": [
-            "Author 1",
-            "Author 2",
-            "Author 3"
-        ],
+    "authors": ["Author 1", "Author 2", "Author 3"],
 
-        "category": [
-            "Category 1"
-        ],
+    "categories": ["Category 1"],
 
-        "group": [
-            "Group 1"
-        ]
-    },
-        {
-        "id": 2,
-        "date": "2021-07-16T20:59:25",
-        "date_gmt": "2021-07-16T20:59:25",
-        "modified": "2021-07-16T20:59:25",
-        "modified_gmt": "2021-07-16T20:59:25",
-        "order": "2",
-        "status": "publish",
-        "owner": "quentin",
-        "highlight": false,
+    "groups": ["Group 1"]
+  },
+  {
+    "id": 2,
+    "date": "2021-07-16T20:59:25",
+    "modified": "2021-07-16T20:59:25",
+    "order": "2",
+    "status": "publish",
+    "owner": "quentin",
+    "highlight": false,
 
-        "type": "article",
-        "title": "Aesthetics and neuroscience, scientific and artistic perspectives",
-        "dop": "2016",
-        "journal": "PRA",
-        "volume": "35",
-        "pages": "967-977",
-        "doi": "10.1007/s00249-005-0040-8",
-        "abstract": "Many questions in cell biology and biophysics involve the quantitation of co-localisation and the interaction of proteins tagged with different fluorophores. however, the incomplete separation of the different colour channels due to the presence of autofluorescence, along with cross-excitation and emission",
-        "link": "http://arxiv.org",
-        "file": "https://arxiv.org/pdf/2202.05369.pdf",
+    "type": "article",
+    "title": "Aesthetics and neuroscience, scientific and artistic perspectives",
+    "dop": "2016",
+    "journal": "PRA",
+    "volume": "35",
+    "pages": "967-977",
+    "doi": "10.1007/s00249-005-0040-8",
+    "abstract": "Many questions in cell biology and biophysics involve the quantitation of co-localisation and the interaction of proteins tagged with different fluorophores. however, the incomplete separation of the different colour channels due to the presence of autofluorescence, along with cross-excitation and emission",
+    "link": "http://arxiv.org",
+    "file": "https://arxiv.org/pdf/2202.05369.pdf",
 
-        "authors": [
-            "Kapoula Z.",
-            "Vernet M.",
-            "Author 3"
-        ],
+    "authors": ["Kapoula Z.", "Vernet M.", "Author 3"],
 
-        "category": [
-            "Category 2"
-        ],
+    "category": ["Category 2"],
 
-        "group": [
-            "Group 1"
-        ]
-    },
-            {
-        "id": 3,
-        "date": "2021-07-16T20:59:25",
-        "date_gmt": "2021-07-16T20:59:25",
-        "modified": "2021-07-16T20:59:25",
-        "modified_gmt": "2021-07-16T20:59:25",
-        "order": "3",
-        "status": "publish",
-        "owner": "quentin",
-        "highlight": false,
+    "group": ["Group 1"]
+  },
+  {
+    "id": 3,
+    "date": "2021-07-16T20:59:25",
+    "modified": "2021-07-16T20:59:25",
+    "order": "3",
+    "status": "publish",
+    "owner": "quentin",
+    "highlight": false,
 
-        "type": "article",
-        "title": "Guiding binocular saccades during reading: a tms study of the ppc",
-        "dop": "2019",
-        "journal": "Frontiers In Human Neuroscience",
-        "volume": "35",
-        "pages": "967-977",
-        "doi": "10.1007/s00249-005-0040-8",
-        "abstract": "Reading is an activity based on complex sequences of binocular saccades and fixations. during saccades, the eyes do not move together perfectly: saccades could end with a misalignment.",
-        "link": "http://arxiv.org",
-        "file": "https://arxiv.org/pdf/2202.05369.pdf",
+    "type": "article",
+    "title": "Guiding binocular saccades during reading: a tms study of the ppc",
+    "dop": "2019",
+    "journal": "Frontiers In Human Neuroscience",
+    "volume": "35",
+    "pages": "967-977",
+    "doi": "10.1007/s00249-005-0040-8",
+    "abstract": "Reading is an activity based on complex sequences of binocular saccades and fixations. during saccades, the eyes do not move together perfectly: saccades could end with a misalignment.",
+    "link": "http://arxiv.org",
+    "file": "https://arxiv.org/pdf/2202.05369.pdf",
 
-        "authors": [
-            "Kapoula Z.",
-            "Vernet M.",
-            "Yang Q."
-        ],
+    "authors": ["Kapoula Z.", "Vernet M.", "Yang Q."],
 
-        "category": [
-            "Category 2"
-        ],
+    "category": ["Category 2"],
 
-        "group": [
-            "Group 1"
-        ]
-    }
+    "group": ["Group 1"]
+  }
 ]

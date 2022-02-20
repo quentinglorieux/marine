@@ -1,0 +1,36 @@
+[
+  {
+    "id": 20,
+    "date": "2021-07-16T20:59:25",
+    "modified": "2021-07-16T20:59:25",
+    "order": "1",
+    "status": "publish",
+    "owner": "quentin",
+
+    "title": "Plasticity of the Sense of Agency",
+
+    "description": "How do we entertain the strong feeling that we are the owners of our own actions? The sense of agency (SoA) is the feeling that we are at the origin of our own volitional actions. It is central to the fluency of action, responsibility and wellbeing in humans. It can be degraded in the modern world when healthy humans interact with more and more sophisticated technologies or in neuropsychiatric patients suffering from depression or schizophrenia. Uncovering the plasticity of the SoA is thus crucial for helping humans to regain the ownership of their actions, optimize their choices and improve their mental health. In our lab, we are currently 1) creating a brain computer interface (BCI) that disturbs the SoA, 2) characterizing how the disturbed SoA can recover through spontaneous mechanisms of plasticity and 3) designing laboratory and everyday life interventions that accelerate the plasticity of the SoA. This will help us to understand how the SoA is instantiated, maintained, and possibly dynamically modified.",
+
+    "image": "image.png",
+
+    "members": ["Member 1", "Member 2", "Member 3"],
+    "publications-id": ["1", "2"]
+  },
+  {
+    "id": 21,
+    "date": "2021-07-16T20:59:25",
+    "modified": "2021-07-16T20:59:25",
+    "order": "1",
+    "status": "publish",
+    "owner": "quentin",
+
+    "title": " Neural substrates of Spontaneous Thoughts ",
+
+    "description": "When awake, most of us believe we are experiencing a stream of consciousness, which would be made of external or internal images, sounds and other sensations, or words (e.g., when talking to ourselves). To explore such conscious experience, many neuroscience studies have focused on characterizing the neural substrate of the content of consciousness (being conscious of a face vs. of a house). Other studies have characterized various states of consciousness (awake, asleep with or without dreaming, anesthesia, disorders of consciousness…) Our research aims to bridge the gap between content and state studies of consciousness. For this, we are exploring the neural correlates not only of the content, but also of the vividness and quality of spontaneous thoughts in humans.",
+
+    "image": "image.png",
+
+    "members": ["Member 1", "Member 2", "Member 3"],
+    "publications-id": ["1", "2"]
+  }
+]
